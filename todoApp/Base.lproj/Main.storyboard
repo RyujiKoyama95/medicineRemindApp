@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MFK-dk-fVP">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="iAE-BC-jur">
+            <objects>
+                <viewController id="neT-kv-O47" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3qq-Xm-hyy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="毎日薬を服用する人のための " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Hc-EM-tfB">
+                                <rect key="frame" x="43" y="40" width="234" height="18"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="飲み忘れ防止アプリ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7e-FP-Egc">
+                                <rect key="frame" x="79" y="73" width="162" height="18"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8L-ly-o85">
+                                <rect key="frame" x="60" y="410" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.29803921568627451" green="0.68627450980392157" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="D6v-Nd-LHd"/>
+                                    <constraint firstAttribute="width" constant="200" id="Rqh-rf-M7i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="はじめる">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Oa6-8z-qq5">
+                                <rect key="frame" x="16" y="126" width="288" height="244"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="薬を服用したかどうか忘れてしまう人のために、このアプリでは服用した瞬間に残数が合っているか確認をします。" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNS-w8-Cuf">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="SHv-gx-GEN"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exz-14-5mO">
+                                        <rect key="frame" x="0.0" y="110" width="288" height="134"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">以下の使用方法を必ず守ってください。
+・薬は1週間毎にまとめる
+・月曜日から服用開始し、日曜日で全て服用済みとなるようにする</string>
+                                        <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2WS-8j-3fI"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Hc-EM-tfB" firstAttribute="centerX" secondItem="3qq-Xm-hyy" secondAttribute="centerX" id="3Zp-PV-8o0"/>
+                            <constraint firstItem="l7e-FP-Egc" firstAttribute="centerX" secondItem="3qq-Xm-hyy" secondAttribute="centerX" id="5yb-yo-QPz"/>
+                            <constraint firstItem="Oa6-8z-qq5" firstAttribute="top" secondItem="l7e-FP-Egc" secondAttribute="bottom" constant="35" id="Ejf-uO-uPc"/>
+                            <constraint firstItem="l7e-FP-Egc" firstAttribute="top" secondItem="6Hc-EM-tfB" secondAttribute="bottom" constant="15" id="K8J-H2-fxx"/>
+                            <constraint firstItem="2WS-8j-3fI" firstAttribute="bottom" secondItem="J8L-ly-o85" secondAttribute="bottom" constant="20" id="MG9-GI-rCJ"/>
+                            <constraint firstItem="2WS-8j-3fI" firstAttribute="trailing" secondItem="Oa6-8z-qq5" secondAttribute="trailing" constant="16" id="W0k-Fw-wgL"/>
+                            <constraint firstItem="J8L-ly-o85" firstAttribute="centerX" secondItem="3qq-Xm-hyy" secondAttribute="centerX" id="aSZ-cj-ock"/>
+                            <constraint firstItem="J8L-ly-o85" firstAttribute="top" secondItem="Oa6-8z-qq5" secondAttribute="bottom" constant="40" id="b5f-Q8-QVN"/>
+                            <constraint firstItem="6Hc-EM-tfB" firstAttribute="top" secondItem="2WS-8j-3fI" secondAttribute="top" constant="40" id="i9y-pM-cB7"/>
+                            <constraint firstItem="Oa6-8z-qq5" firstAttribute="centerX" secondItem="3qq-Xm-hyy" secondAttribute="centerX" id="iG2-N4-Dfu"/>
+                            <constraint firstItem="Oa6-8z-qq5" firstAttribute="leading" secondItem="2WS-8j-3fI" secondAttribute="leading" constant="16" id="onR-Gd-f6G"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dwg-0P-i2M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vLj-WA-XKM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-568" y="1263"/>
+        </scene>
+        <!--お薬リスト-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="remindView" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="RemindViewController" customModule="todoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="q5W-0c-IHv">
+                                <rect key="frame" x="0.0" y="44" width="320" height="436"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="Xfe-rL-2FA">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="KTX-93-JHq"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="hUR-mO-0So"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="q5W-0c-IHv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9ws-mr-Biz"/>
+                            <constraint firstItem="q5W-0c-IHv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Af8-JA-iV6"/>
+                            <constraint firstItem="q5W-0c-IHv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SHE-lG-dGP"/>
+                            <constraint firstItem="q5W-0c-IHv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="j3Z-Wk-S9F"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="お薬リスト" id="iE0-J1-avx">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="BRT-Yh-5MA">
+                            <connections>
+                                <segue destination="8d3-0z-ovC" kind="show" id="55A-TB-qHi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="q5W-0c-IHv" id="9ri-Qm-a0r"/>
+                        <segue destination="OLF-6E-ApV" kind="presentation" identifier="toJudgementVC" id="VQ3-my-vTd"/>
+                        <segue destination="9iu-rb-XwO" kind="presentation" id="mfu-G5-FQg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2169" y="421"/>
+        </scene>
+        <!--Judge View Controller-->
+        <scene sceneID="jn8-MG-BgI">
+            <objects>
+                <viewController storyboardIdentifier="judgeView" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OLF-6E-ApV" customClass="JudgeViewController" customModule="todoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bgP-Ld-swU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ipj-aw-sB0">
+                                <rect key="frame" x="110" y="211.5" width="100" height="215"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7G-M0-1u9">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="39"/>
+                                        <color key="backgroundColor" red="0.29803921568627451" green="0.68627450980392157" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="btnAction1:" destination="OLF-6E-ApV" eventType="touchUpInside" id="Udw-vP-vQb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysq-HX-igK">
+                                        <rect key="frame" x="0.0" y="59" width="100" height="38.5"/>
+                                        <color key="backgroundColor" red="0.29803921568627451" green="0.68627450980392157" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="btnAction2:" destination="OLF-6E-ApV" eventType="touchUpInside" id="Cbz-Sj-4BN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDN-LE-Hbw">
+                                        <rect key="frame" x="0.0" y="117.5" width="100" height="39"/>
+                                        <color key="backgroundColor" red="0.29803921568627451" green="0.68627450980392157" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="btnAction3:" destination="OLF-6E-ApV" eventType="touchUpInside" id="2eY-5l-jMZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Od-7g-AYL">
+                                        <rect key="frame" x="0.0" y="176.5" width="100" height="38.5"/>
+                                        <color key="backgroundColor" red="0.29803921568627451" green="0.68627450980392157" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="btnAction4:" destination="OLF-6E-ApV" eventType="touchUpInside" id="Q0j-Ka-ARK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="NDO-mc-TUq"/>
+                                    <constraint firstAttribute="height" constant="215" id="kAY-dq-lg8"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="残数合わせ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lli-aK-rTg">
+                                <rect key="frame" x="116.5" y="60" width="87" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="の数は残り何日分ありますか？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y39-6F-38b">
+                                <rect key="frame" x="38.5" y="141" width="243" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJk-ue-0aZ">
+                                <rect key="frame" x="138" y="100.5" width="44.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JFl-EI-Ok1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Lli-aK-rTg" firstAttribute="top" secondItem="JFl-EI-Ok1" secondAttribute="top" constant="60" id="6qD-px-fhM"/>
+                            <constraint firstItem="Lli-aK-rTg" firstAttribute="centerX" secondItem="bgP-Ld-swU" secondAttribute="centerX" id="MJN-G6-mPW"/>
+                            <constraint firstItem="eJk-ue-0aZ" firstAttribute="top" secondItem="Lli-aK-rTg" secondAttribute="bottom" constant="20" id="ZbP-KH-kyk"/>
+                            <constraint firstItem="y39-6F-38b" firstAttribute="centerX" secondItem="bgP-Ld-swU" secondAttribute="centerX" id="ebb-KS-9P1"/>
+                            <constraint firstItem="eJk-ue-0aZ" firstAttribute="centerX" secondItem="bgP-Ld-swU" secondAttribute="centerX" id="fek-90-02C"/>
+                            <constraint firstItem="Ipj-aw-sB0" firstAttribute="top" secondItem="y39-6F-38b" secondAttribute="bottom" constant="50" id="lp8-bI-Niw"/>
+                            <constraint firstItem="Ipj-aw-sB0" firstAttribute="centerX" secondItem="bgP-Ld-swU" secondAttribute="centerX" id="qmV-yM-cZ6"/>
+                            <constraint firstItem="y39-6F-38b" firstAttribute="top" secondItem="eJk-ue-0aZ" secondAttribute="bottom" constant="20" id="ue0-wy-L95"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mxR-tL-Wj9"/>
+                    <connections>
+                        <outlet property="itemField" destination="eJk-ue-0aZ" id="Pgz-PE-V3c"/>
+                        <outlet property="numberOfDaysButton1" destination="f7G-M0-1u9" id="8Jc-ss-Vjm"/>
+                        <outlet property="numberOfDaysButton2" destination="ysq-HX-igK" id="ird-T2-zPN"/>
+                        <outlet property="numberOfDaysButton3" destination="kDN-LE-Hbw" id="ZzV-RD-LMK"/>
+                        <outlet property="numberOfDaysButton4" destination="1Od-7g-AYL" id="sco-J9-1Wd"/>
+                        <segue destination="Zok-VY-1KE" kind="presentation" identifier="toResultVC" id="gZI-aI-iYQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9pI-g4-lai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3247.1999999999998" y="158.77061469265368"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="qVB-4h-O7J">
+            <objects>
+                <viewController storyboardIdentifier="resultView" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zok-VY-1KE" customClass="ResultViewController" customModule="todoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1nE-h6-B4u">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eki-Yf-M7b">
+                                <rect key="frame" x="16" y="100" width="288" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sf3-Wv-9zc">
+                                <rect key="frame" x="16" y="270" width="288" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnd-se-1Vl">
+                                <rect key="frame" x="16" y="331" width="288" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dke-X2-IJk"/>
+                        <constraints>
+                            <constraint firstItem="rnd-se-1Vl" firstAttribute="top" secondItem="Sf3-Wv-9zc" secondAttribute="bottom" constant="25" id="2Bl-xW-5mM"/>
+                            <constraint firstItem="eki-Yf-M7b" firstAttribute="centerX" secondItem="1nE-h6-B4u" secondAttribute="centerX" id="2hm-HZ-zGW"/>
+                            <constraint firstItem="Sf3-Wv-9zc" firstAttribute="top" secondItem="eki-Yf-M7b" secondAttribute="bottom" constant="50" id="3hY-BQ-2eb"/>
+                            <constraint firstItem="dke-X2-IJk" firstAttribute="trailing" secondItem="rnd-se-1Vl" secondAttribute="trailing" constant="16" id="8l7-2b-8WU"/>
+                            <constraint firstItem="eki-Yf-M7b" firstAttribute="top" secondItem="dke-X2-IJk" secondAttribute="top" constant="100" id="DVv-7G-Ohe"/>
+                            <constraint firstItem="dke-X2-IJk" firstAttribute="trailing" secondItem="eki-Yf-M7b" secondAttribute="trailing" constant="16" id="I8l-YK-god"/>
+                            <constraint firstItem="dke-X2-IJk" firstAttribute="trailing" secondItem="Sf3-Wv-9zc" secondAttribute="trailing" constant="16" id="SWw-q4-o5T"/>
+                            <constraint firstItem="rnd-se-1Vl" firstAttribute="centerX" secondItem="1nE-h6-B4u" secondAttribute="centerX" id="TEH-gG-bwW"/>
+                            <constraint firstItem="eki-Yf-M7b" firstAttribute="leading" secondItem="dke-X2-IJk" secondAttribute="leading" constant="16" id="TjI-ii-J5L"/>
+                            <constraint firstItem="Sf3-Wv-9zc" firstAttribute="leading" secondItem="dke-X2-IJk" secondAttribute="leading" constant="16" id="Vvz-VB-Cp4"/>
+                            <constraint firstItem="rnd-se-1Vl" firstAttribute="leading" secondItem="dke-X2-IJk" secondAttribute="leading" constant="16" id="e8J-GX-0kx"/>
+                            <constraint firstItem="Sf3-Wv-9zc" firstAttribute="centerX" secondItem="1nE-h6-B4u" secondAttribute="centerX" id="fsU-We-gQL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lastTextField" destination="rnd-se-1Vl" id="mPg-yH-xxg"/>
+                        <outlet property="resultIconField" destination="eki-Yf-M7b" id="JF4-k4-Eka"/>
+                        <outlet property="resultTextField" destination="Sf3-Wv-9zc" id="KZh-Ia-RoZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6kY-ll-avj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4237.5" y="158.75"/>
+        </scene>
+        <!--Add Medicine View Controller-->
+        <scene sceneID="ROQ-Nf-Vtd">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="8d3-0z-ovC" customClass="AddMedicineViewController" customModule="todoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8p7-H5-NHQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uY4-tc-nNq" customClass="CustomitemField" customModule="todoApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="222" width="288" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Y6J-sD-RgM"/>
+                                    <constraint firstAttribute="width" constant="288" id="nAh-C5-a6A"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="itemFieldActionBtnInactive:" destination="8d3-0z-ovC" eventType="editingChanged" id="dEA-hE-Qt5"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="追加する薬の名前は？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIn-fn-ogX">
+                                <rect key="frame" x="70" y="104" width="180" height="18"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ITG-Ha-6Gg" customClass="CustomtimeField" customModule="todoApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="322" width="288" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="3br-r4-cvj"/>
+                                    <constraint firstAttribute="height" constant="50" id="wR8-xa-3Hx"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="itemFieldActionBtnInactive:" destination="8d3-0z-ovC" eventType="editingChanged" id="Aw0-6C-8b0"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3AU-gW-9eh"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OIn-fn-ogX" firstAttribute="centerX" secondItem="8p7-H5-NHQ" secondAttribute="centerX" id="NBH-fB-yF9"/>
+                            <constraint firstItem="ITG-Ha-6Gg" firstAttribute="top" secondItem="uY4-tc-nNq" secondAttribute="bottom" constant="50" id="fHU-CJ-i6p"/>
+                            <constraint firstItem="OIn-fn-ogX" firstAttribute="top" secondItem="3AU-gW-9eh" secondAttribute="top" constant="60" id="o85-3z-cr5"/>
+                            <constraint firstItem="uY4-tc-nNq" firstAttribute="top" secondItem="OIn-fn-ogX" secondAttribute="bottom" constant="100" id="uGg-3K-HYf"/>
+                            <constraint firstItem="ITG-Ha-6Gg" firstAttribute="centerX" secondItem="8p7-H5-NHQ" secondAttribute="centerX" id="vP1-Qs-sqQ"/>
+                            <constraint firstItem="uY4-tc-nNq" firstAttribute="centerX" secondItem="8p7-H5-NHQ" secondAttribute="centerX" id="zrE-eR-i0k"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gMT-Zb-D9g">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="fV0-Fd-dm7">
+                            <connections>
+                                <action selector="addMedicineButton:" destination="8d3-0z-ovC" id="4vs-1J-gna"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="itemField" destination="uY4-tc-nNq" id="dbL-4k-tft"/>
+                        <outlet property="medicineSaveButton" destination="fV0-Fd-dm7" id="hhE-Ao-hB9"/>
+                        <outlet property="timeField" destination="ITG-Ha-6Gg" id="wL7-AH-Xcr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P9g-mD-nQa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3245.625" y="887.5"/>
+        </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="7nt-cg-S6C">
+            <objects>
+                <viewController storyboardIdentifier="modalView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9iu-rb-XwO" customClass="ModalViewController" customModule="todoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6ig-wk-XOm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBn-f2-qkl">
+                                <rect key="frame" x="138" y="60" width="44.5" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9I-uW-W6Z">
+                                <rect key="frame" x="60" y="141" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.29803921568627451" green="0.68627450980392157" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="2q0-wK-7xb"/>
+                                    <constraint firstAttribute="height" constant="50" id="EKi-xv-x5c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="編集"/>
+                                <connections>
+                                    <action selector="editAction:" destination="9iu-rb-XwO" eventType="touchUpInside" id="Ep3-zD-J2T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obF-Dk-IIP">
+                                <rect key="frame" x="60" y="241" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.29803921568627451" green="0.68627450980392157" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="adS-9X-d6D"/>
+                                    <constraint firstAttribute="width" constant="200" id="rXQ-NI-D3F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="削除"/>
+                                <connections>
+                                    <action selector="deleteAction:" destination="9iu-rb-XwO" eventType="touchUpInside" id="mrr-cW-fmE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BCu-cZ-zdq"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="e9I-uW-W6Z" firstAttribute="top" secondItem="HBn-f2-qkl" secondAttribute="bottom" constant="60" id="E5t-kT-f2p"/>
+                            <constraint firstItem="HBn-f2-qkl" firstAttribute="centerX" secondItem="6ig-wk-XOm" secondAttribute="centerX" id="SkZ-N8-wJv"/>
+                            <constraint firstItem="e9I-uW-W6Z" firstAttribute="centerX" secondItem="6ig-wk-XOm" secondAttribute="centerX" id="ff3-Nv-pEh"/>
+                            <constraint firstItem="obF-Dk-IIP" firstAttribute="top" secondItem="e9I-uW-W6Z" secondAttribute="bottom" constant="50" id="vPF-iH-iQS"/>
+                            <constraint firstItem="HBn-f2-qkl" firstAttribute="top" secondItem="BCu-cZ-zdq" secondAttribute="top" constant="60" id="vRu-gy-AKD"/>
+                            <constraint firstItem="obF-Dk-IIP" firstAttribute="centerX" secondItem="6ig-wk-XOm" secondAttribute="centerX" id="wyj-mY-b7c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MedicineName" destination="HBn-f2-qkl" id="9Qp-II-4AR"/>
+                        <outlet property="deleteButton" destination="obF-Dk-IIP" id="qnM-eM-3po"/>
+                        <outlet property="editButton" destination="e9I-uW-W6Z" id="TGh-s5-mNh"/>
+                        <segue destination="r7g-sL-ETr" kind="presentation" id="vb9-dT-Evi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V4x-PN-cnc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3228" y="1637"/>
+        </scene>
+        <!--Edit Medicine View Controller-->
+        <scene sceneID="NWM-IA-11H">
+            <objects>
+                <viewController storyboardIdentifier="editView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="r7g-sL-ETr" customClass="EditMedicineViewController" customModule="todoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZYX-Sk-0or">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="編集する薬の名前は？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7o8-a9-9bc">
+                                <rect key="frame" x="70" y="60" width="180" height="18"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ksH-us-zcr" customClass="CustomitemField" customModule="todoApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="178" width="288" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="KGX-5X-PR3"/>
+                                    <constraint firstAttribute="width" constant="288" id="ePU-IG-tf9"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VmV-uV-7Fo" customClass="CustomtimeField" customModule="todoApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="278" width="288" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="93V-p5-zBP"/>
+                                    <constraint firstAttribute="width" constant="288" id="cG3-Pg-REV"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0U-yk-JIG">
+                                <rect key="frame" x="60" y="390" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.29803921570000003" green="0.68627450980000004" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ba2-T7-WKE"/>
+                                    <constraint firstAttribute="width" constant="200" id="bip-z9-inO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="完了"/>
+                                <connections>
+                                    <action selector="updateAction:" destination="r7g-sL-ETr" eventType="touchUpInside" id="WoW-yv-Pez"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FdH-S1-PfJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7o8-a9-9bc" firstAttribute="top" secondItem="FdH-S1-PfJ" secondAttribute="top" constant="60" id="0iD-6P-W0I"/>
+                            <constraint firstItem="VmV-uV-7Fo" firstAttribute="centerX" secondItem="ZYX-Sk-0or" secondAttribute="centerX" id="4IT-oM-aWs"/>
+                            <constraint firstItem="VmV-uV-7Fo" firstAttribute="top" secondItem="ksH-us-zcr" secondAttribute="bottom" constant="50" id="980-Xd-IER"/>
+                            <constraint firstItem="g0U-yk-JIG" firstAttribute="centerX" secondItem="ZYX-Sk-0or" secondAttribute="centerX" id="Yck-Td-mM1"/>
+                            <constraint firstItem="ksH-us-zcr" firstAttribute="centerX" secondItem="ZYX-Sk-0or" secondAttribute="centerX" id="es5-47-tdO"/>
+                            <constraint firstItem="FdH-S1-PfJ" firstAttribute="bottom" secondItem="g0U-yk-JIG" secondAttribute="bottom" constant="20" id="fy2-h4-S3o"/>
+                            <constraint firstItem="ksH-us-zcr" firstAttribute="top" secondItem="7o8-a9-9bc" secondAttribute="bottom" constant="100" id="lUb-XQ-VmM"/>
+                            <constraint firstItem="7o8-a9-9bc" firstAttribute="centerX" secondItem="ZYX-Sk-0or" secondAttribute="centerX" id="xcp-k3-dUq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="itemField" destination="ksH-us-zcr" id="wiB-RP-gOB"/>
+                        <outlet property="timeField" destination="VmV-uV-7Fo" id="lCF-9x-bC5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z5W-P0-YVh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4126.875" y="1636.25"/>
+        </scene>
+        <!--Register Medicine View Controller-->
+        <scene sceneID="akG-f7-R2i">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Edf-Xf-gjF" customClass="RegisterMedicineViewController" customModule="todoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oJd-Sr-qVc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwj-ra-hS6">
+                                <rect key="frame" x="60" y="410" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.29803921568627451" green="0.68627450980392157" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cTW-jB-ZL4"/>
+                                    <constraint firstAttribute="width" constant="200" id="pdi-fT-lgC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="次へ"/>
+                                <connections>
+                                    <action selector="addMedicine:" destination="Edf-Xf-gjF" eventType="touchUpInside" id="vEI-Zf-mlG"/>
+                                    <segue destination="MFK-dk-fVP" kind="presentation" id="czc-w2-2vL"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Wh-7h-Bhc" customClass="CustomtimeField" customModule="todoApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="278" width="288" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8Rf-r1-acU"/>
+                                    <constraint firstAttribute="width" constant="288" id="S5A-cW-9mX"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="itemFieldActionBtnInactive:" destination="Edf-Xf-gjF" eventType="editingChanged" id="b5H-pH-8gs"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o7Z-mn-9KM" customClass="CustomitemField" customModule="todoApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="178" width="288" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Qbm-zt-Skk"/>
+                                    <constraint firstAttribute="width" constant="288" id="uft-SI-9WK"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="itemFieldActionBtnInactive:" destination="Edf-Xf-gjF" eventType="editingChanged" id="Sti-if-ybB"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="薬の名前を登録しましょう！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjj-lU-Fnq">
+                                <rect key="frame" x="43" y="60" width="234" height="18"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="btz-9M-gXs"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0Wh-7h-Bhc" firstAttribute="top" secondItem="o7Z-mn-9KM" secondAttribute="bottom" constant="50" id="95S-4n-cKt"/>
+                            <constraint firstItem="yjj-lU-Fnq" firstAttribute="top" secondItem="btz-9M-gXs" secondAttribute="top" constant="60" id="UUV-Wd-vyi"/>
+                            <constraint firstItem="0Wh-7h-Bhc" firstAttribute="centerX" secondItem="oJd-Sr-qVc" secondAttribute="centerX" id="V3a-fn-ACa"/>
+                            <constraint firstItem="yjj-lU-Fnq" firstAttribute="centerX" secondItem="oJd-Sr-qVc" secondAttribute="centerX" id="cTK-8T-uwE"/>
+                            <constraint firstItem="Lwj-ra-hS6" firstAttribute="centerX" secondItem="oJd-Sr-qVc" secondAttribute="centerX" id="p9r-Pz-dpA"/>
+                            <constraint firstItem="o7Z-mn-9KM" firstAttribute="centerX" secondItem="oJd-Sr-qVc" secondAttribute="centerX" id="pWf-tz-HGq"/>
+                            <constraint firstItem="o7Z-mn-9KM" firstAttribute="top" secondItem="yjj-lU-Fnq" secondAttribute="bottom" constant="100" id="qSH-qr-v8a"/>
+                            <constraint firstItem="btz-9M-gXs" firstAttribute="bottom" secondItem="Lwj-ra-hS6" secondAttribute="bottom" constant="20" id="sEg-l0-1fQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="itemField" destination="o7Z-mn-9KM" id="PHy-q1-0g9"/>
+                        <outlet property="medicineSaveButton" destination="Lwj-ra-hS6" id="QFE-js-rbC"/>
+                        <outlet property="timeField" destination="0Wh-7h-Bhc" id="lwc-Ms-nXN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5d-iR-yps" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186" y="1263"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vOe-f8-QQk">
+            <objects>
+                <navigationController storyboardIdentifier="firstView" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MFK-dk-fVP" customClass="NavigationController" customModule="todoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="05z-Ph-HrT"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dtF-Ji-u2P">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zss-Ap-RTP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nJ9-1t-QYO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1238" y="422"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
